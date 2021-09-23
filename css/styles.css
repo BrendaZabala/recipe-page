@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --background: #FAFAFA;
+    --text: #000000;
+    --gray-1: #333333;
+    --gray-2: #4F4F4F;
+    --gray-4: #BDBDBD;
+    --orange: #F2994A;
+    --footer: #828282;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 3vh 3vw;
+    background-color: var(--background);
+}
+
+.container-recipe-card {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/** section header **/
+#header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text);
+    margin: 9px 0;
+}
+
+#header figure {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#header #cheesecake {
+    width: 90vw;
+    margin: 10px 0;
+    margin-top: 19px;
+}
+
+#header figure p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--gray-2);
+    font-style: italic;
+    margin-left: 5px;
+    width: 87vw;
+}
+
+/** recipe **/
+#recipe {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#recipe h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--gray-1);
+}
+
+#recipe h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--gray-1);
+    margin: 20px 0px;
+    margin-bottom: 27px;
+}
+
+#recipe label {
+    display: flex;
+    align-items: flex-start;
+}
+
+#recipe label input[type='checkbox'] {
+    margin-right: 4px;
+    width: 21px;
+    height: 21px;
+}
+
+#recipe label p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-1);
+    width: 84vw;
+}
+
+#recipe label p span {
+    font-weight: 700;
+}
+
+#recipe label p i {
+    font-weight: 500;
+}
+
+/** instructions **/
+#instructions {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#instructions h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+    color: var(--gray-1);
+}
+
+#instructions .container-instructions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#instructions .instructions-square {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin-right: 5px;
+}
+
+#instructions p {
+    width: 80vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#instructions p span {
+    font-weight: 700;
+}
+
+#recipe small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--gray-4);
+}
+
+/** aside card **/
+#card {
+    background-color: transparent;
+    padding: 2vh;
+    padding-left: 0;
+}
+
+#card div #icon-menu {
+    color: var(--orange);
+    width: 25.54px; 
+    height: 12.57px;
+}
+
+#card #menu h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: var(--gray-4);
+}
+
+#card #menu p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--orange);
+} 
+
+#card #menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+} 
+
+#card .container-menu-info {
+    display: flex;
+    flex-direction: column;
+    width: 111px;
+    height: 26px;
+}
+
+#card span.material-icons.icon-time {
+    color: var(--gray-2);
+    width: 25.17px; 
+    height: 14.17px;
+}
+
+#card .time div.container-time h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: var(--gray-4);
+}
+
+#card .time div p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--gray-1);
+}
+
+#card .container-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+#card .container-time {
+    display: flex;
+    flex-direction: row;
+    width: 111px;
+    height: 26px;
+}
+
+/** footer **/
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--footer);
+    text-align: center;
+}
+
+footer small a {
+    font-weight: 700;
+    color: var(--footer);
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 3vh 10vw;
+    }
+
+    .container-recipe-card { 
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    /** section header **/
+    #header h1 {
+        font-size: 48px;
+    }
+
+    #header figure {
+        justify-content: flex-start;
+    }
+
+    #header #cheesecake {
+        width: 80vw;
+        margin: 10px 0;
+        margin-top: 19px;
+    }
+
+    #header figure p {
+        font-size: 14px;
+        width: 45vw;
+    }
+
+    /** recipe **/
+    #recipe {
+        margin-top: 0;
+        margin-bottom: 100px;
+        width: 45vw;
+    }
+
+    #recipe h2 {
+        font-size: 24px;
+    }
+
+    #recipe h3 {
+        font-size: 18px;
+    }
+
+    #recipe label input[type='checkbox'] {
+        margin-right: 12px;
+    }
+
+    #recipe label p {
+        font-size: 16px;
+        width: 43vw;
+    }
+
+    /** instructions **/
+    #instructions {
+        margin-bottom: 68px;
+    }
+
+    #instructions h3 {
+        font-size: 24px;
+    }
+
+    #instructions p {
+        width: 41vw;
+    }
+
+    #recipe small {
+        font-size: 16px;
+    }
+
+    /** aside card **/
+    #card {
+        background-color: var(--background);
+        border-radius: 11px;
+        padding: 7vh 3vw;
+        padding-top: 9vh;
+        box-shadow: -6px 0px 10px -2px rgba(0,0,0,0.3);
+    }
+
+    #card div #icon-menu {
+        width: 27.09px; 
+        height: 25.14px;
+    }
+
+    #card #menu h3 {
+        font-size: 10px;
+    }
+
+    #card #menu p {
+        font-size: 14px;
+    }
+
+    #card #menu { 
+        margin-bottom: 23px;
+    }
+ 
+    #card span.material-icons.icon-time {
+        width: 28.33px; 
+        height: 26.52px;
+    }
+
+    #card .time div.container-time h3 {
+        font-size: 10px;
+    }
+
+    #card .time div p {
+        font-size: 14px;
+    }
+
+    #card .container-icons {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    #card .container-time {
+        display: flex;
+        flex-direction: row;
+        width: 111px;
+        height: 26px;
+        margin: 23px 0;
+    }
+
+}
